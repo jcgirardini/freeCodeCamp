@@ -1,0 +1,170 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Topics of the technical documentation</header>
+      <a class="nav-link" href="#description_1">Description 1</a>
+      <a class="nav-link" href="#description_2">Description 2</a>
+      <a class="nav-link" href="#description_3">Description 3</a>
+      <a class="nav-link" href="#description_4">Description 4</a>
+      <a class="nav-link" href="#description_5">Description 5</a>
+    </nav>
+    <main id="main-doc">
+      <section id="description_1" class="main-section">
+        <header>Description 1</header>
+        <p>Paragraph 1</p>
+        <code> let x= 1; </code>
+        <p>Paragraph 2</p>
+      </section>
+      <section id="description_2" class="main-section">
+        <header>Description 2</header>
+        <p>Paragraph 3</p>
+        <code> let x= 2; </code>
+        <p>Paragraph 4</p>
+      </section>
+      <section id="description_3" class="main-section">
+        <header>Description 3</header>
+        <p>Paragraph 5</p>
+        <code> let x= 3; </code>
+        <p>Paragraph 6</p>
+      </section>
+      <section id="description_4" class="main-section">
+        <header>Description 4</header>
+        <p>Paragraph 7</p>
+        <code> let x= 4; </code>
+        <p>Paragraph 8</p>
+      </section>
+      <section id="description_5" class="main-section">
+        <header>Description 5</header>
+        <p>Paragraph 9</p>
+        <code> let x= 5; </code>
+        <p>Paragraph 10
+          <ul>
+            <h3>List title</h3>
+            <li>Item 1</>
+            <li>Item 2</>
+            <li>Item 3</>
+            <li>Item 4</>
+            <li>Item 5</>
+          </ul>
+        </p>
+
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: box-border;
+}
+
+body {
+  background-color:  #DAF7A680;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+#navbar {
+  background-color:  #DAF7A680;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  position: sticky;
+  top: 10px;
+  border-right: 6px double black;
+}
+#navbar>header {
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center; 
+  border-bottom: 1px solid gray;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  border-bottom: 1px solid gray;
+  padding: 3px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Arial;
+}
+.nav-link:hover {
+  font-weight: bold;
+}
+#main-doc {
+  width: 55%;
+  height: 100%;
+  margin: 0px;
+  padding: 15px;
+  overflow: auto;
+}
+.main-section {
+  width: 95%;
+  height: 100%;
+  margin: 10px;
+}
+
+.main-section > header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 0;
+}
+.main-section > p {
+  text-indent: -10px;
+  padding: 5px 5px 10px 20px;
+}
+
+.main-section > code {
+  display: block;
+  background-color:  #FFC30080;
+  border: 1px solid black;
+  padding: 5px 5px 10px 20px;
+  margin: auto;
+  width: 70%;
+  font-family: Arial;
+  font-style: italic;
+}
+
+.main-section > ul {
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.main-section > ul > li {
+  margin: 0px 20px;
+}
+
+@media (max-width: 500px){
+  #navbar {
+    width: 20%;
+  }
+  #main-doc{
+    width: 75%;
+  }
+}
+
+** end of undefined **
+

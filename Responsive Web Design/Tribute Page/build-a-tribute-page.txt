@@ -1,0 +1,89 @@
+** start of undefined **
+
+<!Doctype html>
+<html>
+  <head>
+    <title>San Martín tributo</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"
+  </head>
+  <body>
+    <div id="allElements">
+    <header>
+      <h1 id="title">General José Francisco de San Martín</h1>
+      <h2>El libertador de América</h2>
+    </header>
+    <main id="main">
+      <figure id="img-div">
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Retrato_de_Jos%C3%A9_de_San_Mart%C3%ADn_%28Hernandez%29.jpg/220px-Retrato_de_Jos%C3%A9_de_San_Mart%C3%ADn_%28Hernandez%29.jpg" alt="Retrato del General San MArtín">
+        <figcaption id="img-caption">
+Retrato en óleo de José de San Martín (1921) por Daniel Hernández Morillo.
+        </figcaption>
+      </figure>
+      <section id="tribute-info">
+        <article>
+    <p>José Francisco de San Martín y Matorras​ (Yapeyú, Virreinato del Río de la Plata; 25 de febrero de 1778-Boulogne-sur-Mer, 17 de agosto de 1850) fue un militar y político argentino, libertador de Argentina, Chile y Perú. Es una de las dos figuras más trascendentes de las guerras de independencia hispanoamericanas junto a Simón Bolívar.</p>
+<p>En abril de 1784, cuando tenía seis años, llegó con su familia a la ciudad española de Cádiz ―previa estadía en Buenos Aires― y se radicó luego en la ciudad de Málaga.​ Comenzó sus estudios en el Real Seminario de Nobles de Madrid y en la Escuela de Temporalidades de Málaga en 1786.</p> 
+<p>Ingresó posteriormente al ejército español e hizo su carrera militar en el Regimiento de Murcia.​ Combatió en el norte de África, luego contra la dominación napoleónica de España y participó en las batallas de Bailén y La Albuera.7</b>
+<p>Con 34 años, en 1812, tras haber alcanzado el grado de teniente coronel, y luego de una escala en Londres, retornó a Buenos Aires, donde se puso al servicio de la independencia de las Provincias Unidas del Río de la Plata.</p>
+<p> Se le encomendó la creación del Regimiento de Granaderos a Caballo (que hoy lleva su nombre), que tuvo su bautismo de fuego en el combate de San Lorenzo.</p>
+<p> Más tarde se le encargó la jefatura del Ejército del Norte, en reemplazo del general Manuel Belgrano. Allí concibió su plan continental, comprendiendo que el triunfo patriota en la guerra de la independencia hispanoamericana solo se lograría con la eliminación de todos los núcleos realistas que eran los centros de poder leales a mantener el sistema colonial en América.</p>
+<p>Nombrado gobernador de Cuyo, con sede en la ciudad de Mendoza, puso en marcha su proyecto:​ 
+  <ul>
+    <li>tras organizar al Ejército de los Andes, cruzó la cordillera del mismo nombre y lideró la emancipación de Chile, en las batallas de Chacabuco y Maipú.</li>
+    <li>Luego, utilizando una flota organizada y financiada por Chile, y luego de recibir instrucciones del Senado de Chile,​ atacó al centro del poder español en Sudamérica, la ciudad de Lima,</li>
+    <li>y declaró la independencia del Perú en 1821.</li>
+    </ul>
+    </p>
+    <p> Finalizó su carrera de las armas luego de producida la Entrevista de Guayaquil con Simón Bolívar, en 1822, donde le cedió su ejército y la meta de finalizar la liberación del Perú.</p>​
+<p>Partió hacia Europa, donde murió el 17 de agosto de 1850.</p>
+<p>En Argentina se lo reconoce como el Padre de la Patria19​ y el «Libertador», y se lo valora como el principal héroe y prócer del panteón nacional. En Perú también se lo recuerda como el «Fundador de la Libertad del Perú», el «Fundador de la República», el «Generalísimo de las Armas» y el «Protector» del país.​ El Ejército de Chile le reconoce el grado de capitán general.</p>​      
+        </article>
+         <article>
+           <p>Encuentra más información en <span><a id="tribute-link" href="https://es.wikipedia.org/wiki/Jos%C3%A9_de_San_Mart%C3%ADn" target="_blank">Wikipedia - José de San Martín</a></span></p>
+           </article>       
+        </section>
+
+    </main>
+    <footer></footer>
+    </div>
+  </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #80808020;
+  padding: 5%;
+}
+header {
+  width: 100%;
+  padding: 5%;
+}
+header h1, header h2 {
+  margin:auto;
+  text-align: center;
+}
+#allElements {
+  background-color: rgb(243, 221, 243);
+}
+img {
+  display: block;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+#image-caption{
+  text-align: center;
+}
+article > p {
+  margin: 5px 5px 10px 25px;
+  padding: 5px;
+  text-indent: -25px;
+}
+
+** end of undefined **
+
