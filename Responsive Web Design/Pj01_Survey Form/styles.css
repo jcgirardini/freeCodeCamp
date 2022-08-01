@@ -1,0 +1,49 @@
+body {
+    margin: 5px;
+    background-color: rgba(127, 255, 127, .5);
+    font-family: Tahoma, serif;
+}
+
+main {
+    background-color: rgba(127, 255, 127, .5);
+    max-width: 700px;
+    width: 70%;
+    min-width: 300px;
+    margin: 20px auto;
+    border-radius: 2%;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(127, 255, 127);
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+fieldset {
+    margin: 0 0 5px 0;
+}
+
+.data input {
+    width: 100%;
+    min-height: 1.5em;
+}
+
+.radio label,
+.check label {
+    display: block;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    background: linear-gradient(rgb(127, 255, 127), white, rgb(127, 255, 127));
+    border: 2px solid rgb(127, 255, 127);
+    width: 50%;
+    margin: 10px auto;
+    padding: 5px auto;
+    font-size: 24px;
+}

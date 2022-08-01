@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header > .logo {
+    width: 20%;
+}
+header > .logo > img {
+    width: 100%;
+    object-fit: cover;
+}
+header > .title {
+    width: 45%;
+    text-align: center;
+}
+header > nav{
+    width: 20%;
+
+}
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5% 0 0;
+    list-style: none;
+}
+header > nav > ul > li > a {
+    text-decoration: none;
+}
+header > nav > ul > li > a {
+    text-decoration: none;
+    color:black;
+}
+main{
+    width: 100%;
+    padding-top: 80px;
+    top: 90px;
+    z-index: -1;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#form {
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#email {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 2em;
+}
+#submit {
+    margin: 10px;
+    padding: 5px;
+    font-size: 2em;
+    background-color: orange;
+}
+#section1 {
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#section2 {
+    padding-top: 80px;
+}
+#section3 {
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1, h2, h3 {
+    padding: 2% 0;
+}
+
+.robSelection {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.robItem{
+    width: 30%;
+    padding: 20px;
+}
+.robItem>img{
+    float: left;
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+}
+.robItem > p{
+    width: 70%;
+    float:right;
+}
+.robItem > p:first-of-type {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .robSelection {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    header > nav > ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 1200px) {
+    header > nav > ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
