@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 16px;
-    /*border: 1px solid black;*/
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,23 +12,54 @@
     --bckgrdSun: yellow;
     --bckgrdMid: rgba(60, 190, 220, 0.25);
     --navTxtClr: white;
-    --bckgrdNav:  rgb(120, 80, 230);
+    --bckgrdNav: rgb(120, 80, 230);
     --bckgrdHeader: rgba(20, 10, 120, 0.1);
     --bckgrdMain: rgba(20, 10, 120, 0.1);
     --bckgrdFooter: rgba(20, 10, 120, 0.1);
     --navShadow: white;
 }
 
+/*STANDARDS*/
+h1 {
+    font-size: 1.75rem;
+    margin: 0 0 2rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+h5 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+ul {
+    margin: 1rem 0 2rem 5%;
+}
+
+p,
+li,
+li a {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
 /*BODY STYLE*/
 body {
     width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "mynav mynav"
-                         "myheader mymain"
-                         "myfooter myfooter";
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 10% auto auto;
+    height: 750vh;
 }
 
 body .body__bkgrd {
@@ -36,8 +67,8 @@ body .body__bkgrd {
     display: block;
     position: absolute;
     width: 100%;
-    height: 560%;
-    background-image: linear-gradient(to right, var(--bckgrdDark) 10%, var(--bckgrdLight));
+    height: 750vh;
+    background-image: linear-gradient(to right, var(--bckgrdDark) 30%, var(--bckgrdLight));
 }
 
 body .body__bkgrd .body__bkgrd__frame {
@@ -53,23 +84,24 @@ body .body__bkgrd .body__bkgrd__frame {
 /*HEADER STYLE*/
 .header {
     z-index: 2;
-    grid-area: myheader;
-    width: 100%;
-    height: 100%;
-    margin: 10px 15px 15px;
+    width: 25%;
+    height: 85%;
+    position: fixed;
+    top: 15vh;
+    left: 1vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     background-color: var(--bckgrdHeader);
-    box-shadow: inset 0 0 20px var(--bckgrdDark);
+    box-shadow: inset 0 0 20px 10px var(--bckgrdSun);
 }
 
 .header .header__photo {
-    width: 85%;
-    margin: 25px auto;
-    max-width: 300px;
-    max-height: 300px;
+    width: 75%;
+    margin: 20px auto;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 5px #140a78;
 }
@@ -88,24 +120,25 @@ body .body__bkgrd .body__bkgrd__frame {
     padding: 5%;
 }
 
-.header .header__data h1, h2{
+.header .header__data h1,
+h2 {
     text-align: center;
     margin-bottom: 10px;
 }
-.header .header__data__info{
+
+.header .header__data__info {
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px;
 }
+
 .header .header__data .header__data__info .header__data__info__img {
-    width: 2%;
-    height: 2%;
-    margin: 5px;
-    max-width: 48px;
-    max-height: 48px;
+    width: 20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     border-radius: 2px;
     box-shadow: none;
 }
@@ -120,22 +153,19 @@ body .body__bkgrd .body__bkgrd__frame {
 .header .header__data .header__data__info p,
 .header .header__data .header__data__info p a {
     white-space: nowrap;
-    margin: 0 0 0 10px;
     color: black;
 }
 
 /*NAVBAR STYLE*/
 #navbar {
     z-index: 10;
-    width: 100vw;
+    width: 98%;
     height: 10%;
+    margin: 0 1vw 1vw 1vw;
     position: fixed;
     top: 0;
-}
-.navbar {
-    grid-area: mynav;
     background-color: var(--bckgrdNav);
-    box-shadow: 0px 5px 15px var(--bckgrdNav);
+    box-shadow: inset 0px 0px 20px 5px var(--bckgrdSun);
 }
 
 .navbar ul {
@@ -166,24 +196,24 @@ body .body__bkgrd .body__bkgrd__frame {
     margin: auto;
     text-decoration: none;
     text-align: center;
-    font-size: 1.25em;
     color: var(--navTxtClr);
 }
 
 /*FOOTER STYLE*/
 .footer {
     z-index: 9;
-    grid-area: myfooter;
-    width: 100%;
-    height: 100%;
-    margin: 10px 15px 0px;
+    width: 70%;
+    height: 10vh;
+    margin: 5vh 2%;
+    float: right;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
     background-color: var(--bckgrdFooter);
-    box-shadow: inset 0 0 20px var(--bckgrdDark);
+    box-shadow: inset 0 0 20px 10px var(--bckgrdSun);
 }
+
 .footer .footer__info {
     width: auto;
     display: flex;
@@ -215,43 +245,116 @@ body .body__bkgrd .body__bkgrd__frame {
 .footer .footer__info p a {
     white-space: nowrap;
     margin: 0;
-    font-size: 0.7rem;
 }
 
 /*MAIN STYLE*/
 .main {
-    grid-area: mymain;
-    width: 100%;
-    height: 100%;
-    margin: 10px 15px 15px;
+    width: 70%;
+    margin: 15vh 2%;
+    padding: 2%;
+    float: right;
     display: flex;
     flex-flow: column nowrap;
     background-color: var(--bckgrdMain);
-    box-shadow: inset 0 0 20px var(--bckgrdDark);
+    box-shadow: inset 0 0 20px 10px var(--bckgrdSun);
     justify-content: center;
     align-items: center;
 }
+
 .main section {
     width: 100%;
-    height: 90vh;
-    padding: 15vh 10px 10px 10px;
-    margin: 0 0 0 50px;
+    height: 100vh;
+    margin: 20px 20px;
+    padding: 15vh 5%;
+    box-shadow: inset 0 0 10px 10px var(--bckgrdDark);
     overflow: auto;
-    
 }
-.main section h1 {
-    font-size: 2.5em;
-    margin: 10px 0;
+
+#contact li {
+    width: 60%;
 }
-.main section h2 {
-    font-size: 2.25em;
-    margin: 10px 0;
+
+#contact li .contactInfo {
+    display: inline;
+    float: right;
 }
-.main section p {
-    font-size: 1.5em;
-    margin: 15px 0 10px 25px;
+
+@media (max-width: 800px) {
+
+    /*BODY STYLE*/
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px;
+    }
+
+    /*NAVBAR STYLE*/
+    #navbar {
+        z-index: 10;
+        width: 90%;
+        height: 10%;
+        margin: 0 20px 20px 20px;
+        padding: 5px;
+    }
+
+    /*HEADER STYLE*/
+    .header {
+        z-index: 2;
+        width: 90%;
+        height: auto;
+        margin: 12vh 20px 20px 20px;
+        padding: 10px;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    /*MAIN STYLE*/
+    .main {
+        width: 90%;
+        margin: 10px;
+        padding: 20px;
+        position: relative;
+        float: none;
+    }
+
+    .main section {
+        width: 100%;
+        height: auto;
+        margin: 20px 20px;
+        padding: 15vh 5%;
+        box-shadow: inset 0 0 10px 10px var(--bckgrdDark);
+        overflow: auto;
+    }
+
+    /*FOOTER STYLE*/
+    .footer {
+        z-index: 9;
+        width: 90%;
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+        float: none;
+    }
 }
-.main section ul {
-    font-size: 1.25em;
-    margin: 5px 0 0 50px;
+
+@media (max-width: 500px) {
+* {
+    font-size: 13px;
+}
+#navbar {
+    z-index: 10;
+    height: 12%;
+    margin: 0;
+}
+.navbar ul{
+    height: 95%;
+    flex-flow: column wrap;
+    margin: auto 10px;
+    justify-content:center;
+    align-items: center;
+    float: none;
+}
 }
